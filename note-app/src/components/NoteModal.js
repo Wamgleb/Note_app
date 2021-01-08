@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { Button, Form, InputGroup, FormControl, Modal } from "react-bootstrap";
 import { NewNote, EditNote } from '../services/notes';
 
-
+// UI настройки
 export const NewNoteModal = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);

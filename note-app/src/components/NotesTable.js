@@ -4,6 +4,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import {DeleteNote, GetNotes} from '../services/notes';
 import {EditNoteModal} from './NoteModal'
 
+// Настройки интерфесфа веб-приложения (кнопки и т.д.)
 export const NotesTable = () => {
     const notes = useSelector(state => state.notesReducer.notes);
     const dispatch = useDispatch();

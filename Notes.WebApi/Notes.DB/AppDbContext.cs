@@ -6,6 +6,7 @@ namespace Notes.DB
     {
         public DbSet<Note> Notes { get; set; }
 
+        // Подключаем БД
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(

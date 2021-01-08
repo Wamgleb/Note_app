@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace Notes.Core
 {
+    // Интерфейс, который помогает связать БД и ПО
     public interface INotesServices
     {
         Note CreateNote(Note note);

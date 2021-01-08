@@ -1,10 +1,13 @@
 import { ActionCreators } from "../redux/notesReducer";
 import * as axios from "axios";
 
+
+// Хук, соединяем фронт и бек
 const axiosInstance = axios.create({
     baseURL : "https://localhost5001/notes",
 })
 
+// Делаем запрос на получения данных с БД и отображаем ее с помощью dispatch
 export const GetNotes = async (dispatch) => {
     try {
         //API call
@@ -16,6 +19,7 @@ export const GetNotes = async (dispatch) => {
     }
 }
 
+// Создаем новую запись, делаем пост запрос и выводим новую запись через dispatch
 export const NewNote = async (dispatch, note) => {
     try {
         //API call
